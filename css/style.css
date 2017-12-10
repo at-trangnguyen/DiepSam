@@ -1,0 +1,394 @@
+@charset "UTF-8";
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address,
+del, em, img, small, strong, b, u, i, hr,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+button,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  word-wrap: break-word; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: inherit;
+  font-weight: inherit;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figure, footer, header, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'Conv_utm-avo';
+  src: url("../assets/fonts/utm-avo.eot");
+  src: local("☺"), url("../assets/fonts/utm-avo.woff") format("woff"), url("../assets/fonts/utm-avo.ttf") format("truetype"), url("../assets/fonts/utm-avo.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_UTM AvoBold';
+  src: url("../assets/fonts/UTM AvoBold.eot");
+  src: url("../assets/fonts/UTM AvoBold.woff") format("woff"), url("../assets/fonts/UTM AvoBold.ttf") format("truetype"), url("../assets/fonts/UTM AvoBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ARIALMT';
+  src: url("../assets/fonts/ARIALMT.eot");
+  src: local("☺"), url("../assets/fonts/ARIALMT.woff") format("woff"), url("../assets/fonts/ARIALMT.ttf") format("truetype"), url("../assets/fonts/ARIALMT.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+* Font family
+*/
+/*
+* Color
+*/
+.container::after, .menu-list::after, .footer-top .contact::after, .footer-top .company-info .social::after, .footer-bottom::after, .tab-list::after, .about-us-list::after, .products .products-list::after, .projects .projects-list::after, .news .news-list::after, .gallery .gallary-list::after {
+  clear: both;
+  content: '';
+  display: block; }
+
+.about-us .item .description, .news .description, .gallery .item .description {
+  font-family: "Conv_ARIALMT", sans-serif;
+  line-height: 1.4; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Conv_utm-avo", sans-serif;
+  color: #282828;
+  font-size: 14px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Conv_UTM AvoBold"; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+li {
+  list-style: none; }
+
+a:focus, button:focus, a:focus {
+  outline: none; }
+
+.text-green {
+  color: #0b9444; }
+
+.row-15 {
+  margin: 0 -15px; }
+
+.row-10 {
+  margin: 0 -10px; }
+
+.column-10 {
+  margin: -10px 0; }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto; }
+
+.header {
+  padding: 8px 0; }
+
+.logo {
+  float: left; }
+
+.main-menu {
+  float: right; }
+
+.menu-list .menu-item {
+  float: left; }
+
+.menu-list .item-link {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 26px 26px 28px;
+  position: relative; }
+  .menu-list .item-link.active {
+    color: #229e56; }
+  .menu-list .item-link::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #0b9444;
+    position: absolute;
+    top: 30px;
+    right: -2px; }
+
+.footer-top .map {
+  width: 100%;
+  height: 530px; }
+
+.footer-top .content {
+  font-size: 24px;
+  color: #ffffff; }
+
+.footer-top .contact {
+  padding: 50px 0 40px; }
+
+.footer-top .contact-frm {
+  float: left;
+  width: 54.5%;
+  margin-right: 55px; }
+
+.footer-top .label {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Conv_ARIALMT", sans-serif;
+  color: #686868; }
+
+.footer-top .contact-input, .footer-top .contact-textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 20px; }
+
+.footer-top .company-info {
+  float: left;
+  padding-top: 38px; }
+  .footer-top .company-info .name {
+    font-size: 18px;
+    margin-bottom: 15px; }
+  .footer-top .company-info .field {
+    color: #9f9f9f; }
+  .footer-top .company-info .address, .footer-top .company-info .phonenumber {
+    margin-top: 15px; }
+  .footer-top .company-info .social {
+    margin-top: 20px; }
+  .footer-top .company-info .social-item {
+    float: left;
+    margin-right: 11px; }
+
+.footer-bottom {
+  background: #282828;
+  padding: 36px 0; }
+  .footer-bottom .coppyright {
+    float: left;
+    font-size: 13px;
+    font-family: "Conv_ARIALMT", sans-serif;
+    color: #ffffff; }
+  .footer-bottom .design-by {
+    float: right;
+    font-size: 13px;
+    font-family: "Conv_ARIALMT", sans-serif;
+    color: #ffffff; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 42px; }
+  .section-title .title {
+    font-size: 32px;
+    margin-bottom: 25px; }
+  .section-title .thumbnail {
+    display: inline-block;
+    position: relative; }
+    .section-title .thumbnail::before {
+      content: '';
+      display: block;
+      width: 340px;
+      height: 1px;
+      background: #c6c6c6;
+      position: absolute;
+      left: -365px;
+      top: 17px; }
+    .section-title .thumbnail::after {
+      content: '';
+      display: block;
+      width: 340px;
+      height: 1px;
+      background: #c6c6c6;
+      position: absolute;
+      bottom: 17px;
+      left: 58px; }
+
+.tab-list {
+  margin: 0 auto 30px; }
+  .tab-list .tab-item {
+    float: left;
+    margin-right: 12px;
+    text-align: center;
+    text-transform: uppercase; }
+    .tab-list .tab-item:last-child {
+      margin-right: 0; }
+  .tab-list .item-link {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 4px; }
+    .tab-list .item-link.active {
+      background: #0b9444;
+      color: #ffffff; }
+
+.section-has-bg-green {
+  padding: 38px 0;
+  background: #39b54a;
+  text-align: center; }
+
+.view-more {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  border-radius: 4px; }
+
+.banner {
+  height: 744px;
+  background: url(../assets/images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 281px 0 270px; }
+  .banner .inner {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    color: #ffffff; }
+  .banner .title {
+    font-size: 26px;
+    font-family: "Conv_utm-avo", sans-serif; }
+  .banner .slogan {
+    font-size: 42px;
+    margin: 47px 0; }
+  .banner .view-more:hover {
+    background: #0b9444;
+    border-color: #0b9444; }
+
+.about-us {
+  background: #f7f7f7;
+  padding: 100px 0 70px;
+  margin-bottom: 68px; }
+  .about-us-list {
+    margin-top: 25px; }
+  .about-us .item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 15px; }
+    .about-us .item .title {
+      font-size: 20px; }
+    .about-us .item .description {
+      color: #555555;
+      margin: 25px 0 28px; }
+
+.products {
+  margin-bottom: 68px; }
+  .products .tab-list {
+    width: 57%; }
+  .products .item {
+    float: left;
+    width: 25%;
+    position: relative; }
+    .products .item::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+    .products .item:hover::after {
+      background: rgba(51, 51, 51, 0.8); }
+    .products .item:hover .name {
+      display: block;
+      z-index: 10; }
+  .products .name {
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    border: 2px solid #ffffff;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+    display: none; }
+  .products .view-more:hover {
+    background: #ffffff;
+    color: #0b9444; }
+
+.projects {
+  margin-bottom: 75px; }
+  .projects .tab-list {
+    width: 26%; }
+  .projects .projects-list .item-by-collumn {
+    float: left;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px; }
+  .projects .projects-list .item-link {
+    display: inline-block;
+    padding: 10px 0; }
+
+.news {
+  padding: 55px 0 65px;
+  margin-bottom: 55px;
+  background: url(../assets/images/background_news.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .news .title {
+    color: #ffffff; }
+  .news .item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 10px; }
+  .news .item-title {
+    font-size: 15px;
+    font-family: "Conv_UTM AvoBold";
+    color: #ffffff;
+    line-height: 1.4;
+    margin: 22px 0; }
+    .news .item-title:hover {
+      color: #0b9444; }
+  .news .description {
+    font-size: 13px;
+    color: #ffffff; }
+
+.gallery {
+  margin-bottom: 62px; }
+  .gallery .item {
+    float: left;
+    width: 25%;
+    padding: 0 10px; }
+    .gallery .item .description {
+      margin-top: 22px;
+      font-size: 13px; }

@@ -1,0 +1,32 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 42px;
+  .title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .thumbnail {
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 340px;
+      height: 1px;
+      background: #c6c6c6;
+      position: absolute;
+      left: -365px;
+      top: 17px;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 340px;
+      height: 1px;
+      background: $color-m;
+      position: absolute;
+      bottom: 17px;
+      left: 58px;
+    }
+  }
+}

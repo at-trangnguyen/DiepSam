@@ -1,0 +1,12 @@
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+%description {
+  font-family: $font-description;
+  line-height: 1.4;
+}
