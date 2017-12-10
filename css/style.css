@@ -122,8 +122,9 @@ a:focus, button:focus, a:focus {
   margin: -10px 0; }
 
 .container {
-  max-width: 1240px;
-  margin: 0 auto; }
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 .header {
   padding: 8px 0; }
