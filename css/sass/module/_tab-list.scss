@@ -15,8 +15,31 @@
     padding: 12px 20px;
     border-radius: 4px;
     &.active {
-      background: $color-b;
-      color: $color-d;
+      background: $color-primary;
+      color: $color-c;
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .tab-list {
+    .tab-item {
+      margin-right: 5px;
+    }
+    .item-link {
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .tab-list {
+    .tab-item {
+      margin-right: 0;
+    }
+    .item-link {
+      padding: 8px;
+      font-size: 12px;
     }
   }
 }

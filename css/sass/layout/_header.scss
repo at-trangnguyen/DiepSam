@@ -1,16 +1,24 @@
 .header {
   padding: 8px 0;
+  position: relative;
 }
 .logo {
   float: left;
 }
 .main-menu {
+  @extend %clearfix;
   float: right;
 }
 .menu-list {
   @extend %clearfix;
   .menu-item {
     float: left;
+    &:last-child {
+      .item-link::after {
+        content: '';
+        width: 0;
+      }
+    }
   }
   .item-link {
     text-transform: uppercase;
@@ -18,17 +26,87 @@
     padding: 26px 26px 28px;
     position: relative;
     &.active {
-      color: $color-f;
+      color: $color-e;
     }
     &::after {
       content: '';
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: $color-b;
+      background: $color-primary;
       position: absolute;
       top: 30px;
       right: -2px;
+    }
+  }
+}
+.menu-mobile {
+  display: none;
+  float: right;
+  width: 38px;
+  padding-top: 22px;
+  .item {
+    display: block;
+    height: 4px;
+    background: $color-primary;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .menu-list {
+    .item-link {
+      padding: 26px 15px 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .menu-list {
+    display: none;
+    position: absolute;
+    left: 70%;
+    top: 100%;
+    background: $color-c;
+    width: 30%;
+    .menu-item {
+      float: none;
+    }
+    .item-link {
+      padding: 16px 18px;
+      color: $color-d;
+      &::after {
+        content: '';
+        width: 0;
+      }
+    }
+  }
+  .menu-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo-thumbnail {
+    height: 50px;
+  }
+  .menu-mobile {
+    padding-top: 15px;
+  }
+  .menu-list {
+    .menu-item {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 599px){
+  .menu-mobile {
+    width: 30px;
+  }
+  .menu-list {
+    .item-link {
+      padding: 12px 15px;
     }
   }
 }

@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Diep Sam</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -39,6 +41,11 @@
             <a class="item-link" href="">contact</a>
           </li>
         </ul>
+        <div class="menu-mobile">
+          <span class="item"></span>
+          <span class="item"></span>
+          <span class="item"></span>
+        </div>
       </nav>
     </div>
   </header>
@@ -56,7 +63,7 @@
       <div class="container">
         <div class="section-title">
           <h2 class="title">about us</h2>
-          <div class="thumbnail">
+          <div class="title-thumbnail">
             <img src="../assets/images/logo_small.png" alt="logo">
           </div>
         </div>
@@ -89,7 +96,7 @@
       <div class="container">
         <div class="section-title">
           <h2 class="title">products</h2>
-          <div class="thumbnail">
+          <div class="title-thumbnail">
             <img src="../assets/images/logo_small.png" alt="logo">
           </div>
         </div>
@@ -117,49 +124,49 @@
       <ul class="products-list">
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_1.png" alt="product_1">
+            <img class="thumbnail" src="../assets/images/product_1.png" alt="product_1">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_2.png" alt="product_2">
+            <img class="thumbnail" src="../assets/images/product_2.png" alt="product_2">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_3.png" alt="product_3">
+            <img class="thumbnail" src="../assets/images/product_3.png" alt="product_3">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_4.png" alt="product_4">
+            <img class="thumbnail" src="../assets/images/product_4.png" alt="product_4">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_5.png" alt="product_5">
+            <img class="thumbnail" src="../assets/images/product_5.png" alt="product_5">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_6.png" alt="product_6">
+            <img class="thumbnail" src="../assets/images/product_6.png" alt="product_6">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_7.png" alt="product_7">
+            <img class="thumbnail" src="../assets/images/product_7.png" alt="product_7">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
         <li class="item">
           <a href="">
-            <img src="../assets/images/product_8.png" alt="product_8">
+            <img class="thumbnail" src="../assets/images/product_8.png" alt="product_8">
             <p class="name">high quality wooden wall</p>
           </a>
         </li>
@@ -172,7 +179,7 @@
       <div class="container">
         <div class="section-title">
           <h2 class="title">projects</h2>
-          <div class="thumbnail">
+          <div class="title-thumbnail">
             <img src="../assets/images/logo_small.png" alt="logo">
           </div>
         </div>
@@ -187,50 +194,62 @@
             <a class="item-link active" href="">classic</a>
           </li>
         </ul>
-        <ul class="projects-list row-10">
-          <li class="item-by-collumn column-10">
+        <div class="projects-list">
+          <div class="grid-sizer"></div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_1.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_1.png" alt="">
             </a>
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_5.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_2.png" alt="">
             </a>
-          </li>
-          <li class="item-by-collumn column-10">
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_2.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_3.png" alt="">
             </a>
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_6.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_4.png" alt="">
             </a>
-          </li>
-          <li class="item-by-collumn column-10">
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_3.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_7.png" alt="">
             </a>
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_7.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_9.png" alt="">
             </a>
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_8.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_6.png" alt="">
             </a>
-          </li>
-          <li class="item-by-collumn column-10">
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_4.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_5.png" alt="">
             </a>
+          </div>
+          <div class="project-item">
             <a class="item-link" href="">
-              <img src="../assets/images/project_9.png" alt="">
+              <img class="thumbnail" src="../assets/images/project_8.png" alt="">
             </a>
-          </li>
-        </ul>
+          </div>
+          
+        </div>
       </div>
     </section>
     <section class="news">
       <div class="container">
         <div class="section-title">
           <h2 class="title">news - event</h2>
-          <div class="thumbnail">
+          <div class="title-thumbnail">
             <img src="../assets/images/logo_small.png" alt="logo">
           </div>
         </div>
@@ -263,7 +282,7 @@
       <div class="container">
         <div class="section-title">
           <h2 class="title">gallery</h2>
-          <div class="thumbnail">
+          <div class="title-thumbnail">
             <img src="../assets/images/logo_small.png" alt="logo">
           </div>
         </div>
@@ -315,27 +334,27 @@
           <div class="company-info">
             <h3 class="name">Company Interior Design Consultancy Home Stay</h3>
             <p class="field">Consulting - Interior design</p>
-            <p class="address">Address: 109 Nguyen Hien, Son Tra, Da Nang</p>
-            <p class="phonenumber">Phone: 01287069177</p>
+            <address class="address">Address: 109 Nguyen Hien, Son Tra, Da Nang</address>
+            <p class="phonenumber">Phone: <a href="tel:01287069177">01287069177</a></p>
             <ul class="social">
               <li class="social-item">
                 <a href="">
-                  <img src="../assets/images/facebook.png" alt="">
+                  <img class="thumbnail" src="../assets/images/facebook.png" alt="">
                 </a>
               </li>
               <li class="social-item">
                 <a href="">
-                  <img src="../assets/images/twitter.png" alt="">
+                  <img class="thumbnail" src="../assets/images/twitter.png" alt="">
                 </a>
               </li>
               <li class="social-item">
                 <a href="">
-                  <img src="../assets/images/google.png" alt="">
+                  <img class="thumbnail" src="../assets/images/google.png" alt="">
                 </a>
               </li>
               <li class="social-item">
                 <a href="">
-                  <img src="../assets/images/skype.png" alt="">
+                  <img class="thumbnail" src="../assets/images/skype.png" alt="">
                 </a>
               </li>
             </ul>
@@ -350,5 +369,6 @@
       </div>
     </div>
   </footer>
+  <script src="../js/index.js"></script>
 </body>
 </html>

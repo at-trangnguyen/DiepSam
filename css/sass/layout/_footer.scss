@@ -6,7 +6,7 @@
   }
   .content {
     font-size: 24px;
-    color: $color-d;
+    color: $color-c;
   }
   .contact {
     @extend %clearfix;
@@ -22,7 +22,7 @@
     font-size: 16px;
     font-style: italic;
     font-family: $font-description;
-    color: $color-j;
+    color: $color-i;
   }
   .contact-input, .contact-textarea {
     width: 100%;
@@ -39,7 +39,7 @@
       margin-bottom: 15px;
     }
     .field {
-      color: $color-k;
+      color: $color-j;
     }
     .address, .phonenumber {
       margin-top: 15px;
@@ -50,7 +50,7 @@
     }
     .social-item {
       float: left;
-      margin-right: 11px;
+      margin-left: 10px;
     }
   }
 }
@@ -62,12 +62,89 @@
     float: left;
     font-size: 13px;
     font-family: $font-description;
-    color: $color-d;
+    color: $color-c;
   }
   .design-by {
     float: right;
     font-size: 13px;
     font-family: $font-description;
-    color: $color-d;
+    color: $color-c;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-top {
+    .contact-frm {
+      width: 47%;
+      margin-right: 40px;      
+    }
+    .company-info {
+      width: 50%;
+      .name {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .footer-top {
+    .contact-frm {
+      float: none;
+      width: 100%;
+    }
+    .company-info {
+      float: none;
+      width: 100%;
+      text-align: center;
+      .social {
+        width: 23%;
+        margin: 20px auto 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-top {
+    .company-info {
+      .social {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .footer-top {
+    .content {
+      font-size: 20px;
+    }
+    .company-info {
+      .social {
+        width: 37%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer-top {
+    .content {
+      font-size: 16px;
+    }
+    .company-info {
+      .social {
+        width: 45%;
+      }
+    }
+  }
+  .footer-bottom {
+    .coppyright {
+      font-size: 10px;
+    }
+    .design-by {
+      font-size: 10px;
+    }
   }
 }
