@@ -59,16 +59,12 @@
   background: $color-a;
   padding: 36px 0;
   .coppyright {
+    @extend %text-footer;
     float: left;
-    font-size: 13px;
-    font-family: $font-description;
-    color: $color-c;
   }
   .design-by {
+    @extend %text-footer;
     float: right;
-    font-size: 13px;
-    font-family: $font-description;
-    color: $color-c;
   }
 }
 
@@ -89,13 +85,11 @@
 
 @media screen and (max-width: 959px) {
   .footer-top {
-    .contact-frm {
+    .contact-frm, .company-info {
       float: none;
       width: 100%;
     }
     .company-info {
-      float: none;
-      width: 100%;
       text-align: center;
       .social {
         width: 23%;
@@ -140,10 +134,7 @@
     }
   }
   .footer-bottom {
-    .coppyright {
-      font-size: 10px;
-    }
-    .design-by {
+    .coppyright, .design-by {
       font-size: 10px;
     }
   }
