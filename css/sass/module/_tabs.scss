@@ -1,4 +1,4 @@
-.tab-list {
+.tab-link {
   @extend %clearfix;
   margin: 0 auto 30px;
   .tab-item {
@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 959px) {
-  .tab-list {
+  .tab-link {
     .tab-item {
       margin-right: 5px;
     }
@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 566px) {
-  .tab-list {
+  .tab-link {
     .tab-item {
       margin-right: 0;
     }

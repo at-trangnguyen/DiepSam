@@ -1,22 +1,24 @@
-.view-more {
+.btn {
   display: inline-block;
   padding: 15px 40px;
   font-size: 18px;
-  color: $color-c;
   text-transform: uppercase;
   border: 2px solid $color-c;
   border-radius: 4px;
 }
 
+.btn-primary {
+  color: $color-c;
+}
 @media screen and (max-width: 767px) {
-  .view-more {
+  .btn {
     padding: 12px 30px;
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 599px) {
-  .view-more {
+  .btn {
     padding: 10px 20px; 
     font-size: 12px;
   }

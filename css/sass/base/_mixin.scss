@@ -4,3 +4,13 @@
   -o-box-sizing: $type;
   box-sizing: $type;
 }
+
+@function calculateRem($size) {
+  $remSize: $size / 14px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}

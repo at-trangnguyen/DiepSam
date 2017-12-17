@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 275px 0 265px;
-  .inner {
+  .caption {
     width: 65%;
     margin: auto;
     text-align: center;
@@ -17,7 +17,7 @@
     font-size: 42px;
     margin: 45px 0 40px;
   }
-  .view-more {
+  .btn-primary {
     &:hover {
       background: $color-primary;
       border-color: $color-primary;
@@ -29,13 +29,9 @@
   padding: 100px 0 70px;
   margin-bottom: 68px;
   &-list {
-    @extend %clearfix;
     margin-top: 25px;
   }
   .item {
-    float: left;
-    width: calc(100% / 3);
-    padding: 0 15px;
     .title {
       font-size: 20px;
     }
@@ -48,7 +44,7 @@
 } 
 .products {
   margin-bottom: 68px;
-  .tab-list {
+  .tab-link {
     width: 57%;
   }
   .products-list {
@@ -91,7 +87,7 @@
     text-align: center;
     display: none;
   }
-  .view-more {
+  .btn-primary {
     &:hover {
       background: $color-c;
       color: $color-primary;
@@ -100,12 +96,12 @@
 }
 .projects {
   margin-bottom: 75px;
-  .tab-list {
+  .tab-link {
     width: 26%;
   }
   .projects-list {
     @extend %clearfix;
-    margin: -2% -2%; 
+    margin: -1% -1%; 
     .project-item {
       float: left;
       width: 25%;
@@ -125,14 +121,6 @@
   .title {
     color: $color-c;
   }
-  .news-list {
-    @extend %clearfix;
-  }
-  .item {
-    float: left;
-    width: calc(100% / 3);
-    padding: 0 10px;
-  }
   .item-title {
     font-size: 15px;
     font-family: $font-title;
@@ -151,24 +139,16 @@
 }
 .gallery {
   margin-bottom: 62px;
-  .gallary-list {
-    @extend %clearfix;
-  }
-  .item {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    .description {
-      @extend %description;
-      margin-top: 22px;
-      font-size: 13px;
-    }
+  .description {
+    @extend %description;
+    margin-top: 22px;
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .banner {
-    .inner {
+    .caption {
       width: 90%;
     }
   }
@@ -180,12 +160,12 @@
     }
   }
   .products {
-    .tab-list {
+    .tab-link {
       width: 76%;
     }
   }
   .projects {
-    .tab-list {
+    .tab-link {
       width: 35%;
     }
   }
@@ -229,8 +209,6 @@
     padding-bottom: 40px;
     margin-bottom: 40px;    
     .item {
-      width: 100%;
-      margin-bottom: 25px;
       .title {
         text-align: center;
       }
@@ -241,12 +219,12 @@
   }
   .products {
     margin-bottom: 40px;    
-    .tab-list {
+    .tab-link {
       width: 96%;
     }
   }
   .projects {
-    .tab-list {
+    .tab-link {
       width: 43%;
     }
     .projects-list {
@@ -265,10 +243,6 @@
   }
   .gallery {
     margin-bottom: 40px;
-    .item {
-      width: 50%;
-      margin-bottom: 25px;
-    }
   }
 }
 
@@ -291,7 +265,7 @@
     }
   }
   .products {
-    .tab-list {
+    .tab-link {
       width: 100%;
     }
   }
@@ -322,12 +296,12 @@
     }
   }
   .projects {
-    .tab-list {
+    .tab-link {
       width: 55%;
     }
   }
   .products {
-    .tab-list {
+    .tab-link {
       width: 80%;
     }
   }

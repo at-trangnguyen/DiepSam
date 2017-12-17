@@ -5,11 +5,11 @@
 .logo {
   float: left;
 }
-.main-menu {
+.navigation {
   @extend %clearfix;
   float: right;
 }
-.menu-list {
+.main-menu {
   @extend %clearfix;
   .menu-item {
     float: left;
@@ -40,21 +40,24 @@
     }
   }
 }
-.menu-mobile {
+.toggle-menu {
   display: none;
   float: right;
   width: 38px;
-  padding-top: 22px;
-  .item {
+  margin-top: 22px;
+  height: 4px;
+  background: $color-primary;
+  &::before, &::after {
+    background: $color-primary;
+    content: '';
     display: block;
     height: 4px;
-    background: $color-primary;
-    margin-bottom: 5px;
+    width: 38px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .menu-list {
+  .main-menu {
     .item-link {
       padding: 26px 15px 28px;
     }
@@ -62,7 +65,7 @@
 }
 
 @media screen and (max-width: 959px) {
-  .menu-list {
+  .main-menu {
     display: none;
     position: absolute;
     left: 70%;
@@ -81,7 +84,7 @@
       }
     }
   }
-  .menu-mobile {
+  .toggle-menu{
     display: block;
   }
 }
@@ -90,10 +93,10 @@
   .logo-thumbnail {
     height: 50px;
   }
-  .menu-mobile {
-    padding-top: 15px;
+  .toggle-menu {
+    margin-top: 15px;
   }
-  .menu-list {
+  .main-menu {
     .menu-item {
       font-size: 12px;
     }
@@ -101,10 +104,10 @@
 }
 
 @media screen and (max-width: 599px){
-  .menu-mobile {
+  .toggle-menu {
     width: 30px;
   }
-  .menu-list {
+  .main-menu {
     .item-link {
       padding: 12px 15px;
     }

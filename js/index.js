@@ -9,7 +9,7 @@ $(document).ready(function() {
   });
 });
 
-$('.menu-mobile').click(function(e) {
+$('.toggle-mobile').click(function(e) {
   e.preventDefault();
-  $('.menu-list').slideToggle();
+  $('.main-menu').slideToggle();
 });
