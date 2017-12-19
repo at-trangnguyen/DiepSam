@@ -9,7 +9,7 @@ $(document).ready(function() {
   });
 });
 
-$('.toggle-mobile').click(function(e) {
+$('.toggle-menu').click(function(e) {
   e.preventDefault();
   $('.main-menu').slideToggle();
 });

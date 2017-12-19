@@ -8,6 +8,9 @@
   .title-thumbnail {
     display: inline-block;
     position: relative;
+    width: 37px;
+    height: 37px;
+    background: url(../assets/images/logo_small.png) no-repeat center;
     &::before {
       content: '';
       display: block;

@@ -42,34 +42,13 @@ a img {
 article, aside, details, figure, footer, header, menu, nav, section, summary {
   display: block; }
 
-@font-face {
-  font-family: 'Conv_utm-avo';
-  src: url("../assets/fonts/utm-avo.eot");
-  src: local("☺"), url("../assets/fonts/utm-avo.woff") format("woff"), url("../assets/fonts/utm-avo.ttf") format("truetype"), url("../assets/fonts/utm-avo.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_UTM AvoBold';
-  src: url("../assets/fonts/UTM AvoBold.eot");
-  src: url("../assets/fonts/UTM AvoBold.woff") format("woff"), url("../assets/fonts/UTM AvoBold.ttf") format("truetype"), url("../assets/fonts/UTM AvoBold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_ARIALMT';
-  src: url("../assets/fonts/ARIALMT.eot");
-  src: local("☺"), url("../assets/fonts/ARIALMT.woff") format("woff"), url("../assets/fonts/ARIALMT.ttf") format("truetype"), url("../assets/fonts/ARIALMT.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /*
 * Font family
 */
 /*
 * Color
 */
-.container::after, .row::after, .navigation::after, .main-menu::after, .footer-top .contact::after, .footer-top .company-info .social::after, .footer-bottom::after, .tab-link::after, .products .products-list::after, .projects .projects-list::after {
+.container::after, .row::after, .navigation::after, .main-menu::after, .footer-top .contact::after, .footer-top .company-info .social::after, .footer-bottom::after, .nav-tabs::after, .products .products-list::after, .projects .projects-list::after {
   clear: both;
   content: '';
   display: block; }
@@ -93,7 +72,8 @@ article, aside, details, figure, footer, header, menu, nav, section, summary {
 
 body {
   font-family: "Conv_utm-avo", sans-serif;
-  color: #282828; }
+  color: #282828;
+  font-size: 14px; }
 
 a {
   text-decoration: none;
@@ -276,16 +256,27 @@ a:focus, button:focus, a:focus {
 .toggle-menu {
   display: none;
   float: right;
+  margin-top: 30px;
   width: 38px;
-  margin-top: 22px;
-  height: 4px;
-  background: #0b9444; }
-  .toggle-menu::before, .toggle-menu::after {
-    background: #0b9444;
-    content: '';
+  cursor: pointer; }
+  .toggle-menu .item {
     display: block;
+    width: 100%;
     height: 4px;
-    width: 38px; }
+    background: #0b9444;
+    position: relative; }
+    .toggle-menu .item::before, .toggle-menu .item::after {
+      background: #0b9444;
+      content: '';
+      display: block;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      left: 0; }
+    .toggle-menu .item::before {
+      top: -10px; }
+    .toggle-menu .item::after {
+      top: 10px; }
 
 @media screen and (max-width: 1023px) {
   .main-menu .item-link {
@@ -314,7 +305,8 @@ a:focus, button:focus, a:focus {
   .logo-thumbnail {
     height: 50px; }
   .toggle-menu {
-    margin-top: 15px; }
+    margin-top: 22px;
+    width: 35px; }
   .main-menu .menu-item {
     font-size: 12px; } }
 
@@ -381,7 +373,7 @@ a:focus, button:focus, a:focus {
 
 @media screen and (max-width: 1023px) {
   .footer-top .contact-frm {
-    width: 47%;
+    width: 45%;
     margin-right: 40px; }
   .footer-top .company-info {
     width: 50%; }
@@ -406,7 +398,9 @@ a:focus, button:focus, a:focus {
   .footer-top .content {
     font-size: 20px; }
   .footer-top .company-info .social {
-    width: 37%; } }
+    width: 37%; }
+  .footer-bottom {
+    padding: 20px 0; } }
 
 @media screen and (max-width: 479px) {
   .footer-top .content {
@@ -445,7 +439,10 @@ a:focus, button:focus, a:focus {
     margin-bottom: 25px; }
   .section-title .title-thumbnail {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    width: 37px;
+    height: 37px;
+    background: url(../assets/images/logo_small.png) no-repeat center; }
     .section-title .title-thumbnail::before {
       content: '';
       display: block;
@@ -521,47 +518,59 @@ a:focus, button:focus, a:focus {
   .section-has-bg-green {
     padding: 20px 0; } }
 
-.tab-link {
+.nav-tabs {
   margin: 0 auto 30px; }
-  .tab-link .tab-item {
+  .nav-tabs .tab-item {
     float: left;
     margin-right: 12px;
     text-align: center;
     text-transform: uppercase; }
-    .tab-link .tab-item:last-child {
+    .nav-tabs .tab-item:last-child {
       margin-right: 0; }
-  .tab-link .item-link {
+  .nav-tabs .tab-link {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 4px; }
-    .tab-link .item-link.active {
+    .nav-tabs .tab-link.active {
       background: #0b9444;
       color: #ffffff; }
 
 @media screen and (max-width: 959px) {
-  .tab-link .tab-item {
+  .nav-tabs .tab-item {
     margin-right: 5px; }
-  .tab-link .item-link {
+  .nav-tabs .tab-link {
     padding: 10px; } }
 
 @media screen and (max-width: 566px) {
-  .tab-link .tab-item {
+  .nav-tabs .tab-item {
     margin-right: 0; }
-  .tab-link .item-link {
+  .nav-tabs .tab-link {
     padding: 8px;
     font-size: 12px; } }
 
+@font-face {
+  font-family: 'Conv_utm-avo';
+  src: url("../assets/fonts/utm-avo.eot");
+  src: local("☺"), url("../assets/fonts/utm-avo.woff") format("woff"), url("../assets/fonts/utm-avo.ttf") format("truetype"), url("../assets/fonts/utm-avo.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_UTM AvoBold';
+  src: url("../assets/fonts/UTM AvoBold.eot");
+  src: url("../assets/fonts/UTM AvoBold.woff") format("woff"), url("../assets/fonts/UTM AvoBold.ttf") format("truetype"), url("../assets/fonts/UTM AvoBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ARIALMT';
+  src: url("../assets/fonts/ARIALMT.eot");
+  src: local("☺"), url("../assets/fonts/ARIALMT.woff") format("woff"), url("../assets/fonts/ARIALMT.ttf") format("truetype"), url("../assets/fonts/ARIALMT.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .text-green {
   color: #0b9444; }
-
-.row-15 {
-  margin: 0 -15px; }
-
-.row-10 {
-  margin: 0 -10px; }
-
-.column-10 {
-  margin: -10px 0; }
 
 .thumbnail {
   width: 100%; }
@@ -600,7 +609,7 @@ a:focus, button:focus, a:focus {
 
 .products {
   margin-bottom: 68px; }
-  .products .tab-link {
+  .products .nav-tabs {
     width: 57%; }
   .products .item {
     float: left;
@@ -638,7 +647,7 @@ a:focus, button:focus, a:focus {
 
 .projects {
   margin-bottom: 75px; }
-  .projects .tab-link {
+  .projects .nav-tabs {
     width: 26%; }
   .projects .projects-list {
     margin: -1% -1%; }
@@ -680,9 +689,9 @@ a:focus, button:focus, a:focus {
     width: 90%; }
   .about-us .item .title {
     font-size: 18px; }
-  .products .tab-link {
+  .products .nav-tabs {
     width: 76%; }
-  .projects .tab-link {
+  .projects .nav-tabs {
     width: 35%; } }
 
 @media screen and (max-width: 959px) {
@@ -740,7 +749,7 @@ a:focus, button:focus, a:focus {
       margin: 25px 0; }
   .about-us .item .title {
     font-size: 16px; }
-  .products .tab-link {
+  .products .nav-tabs {
     width: 100%; } }
 
 @media screen and (max-width: 479px) {
@@ -754,7 +763,7 @@ a:focus, button:focus, a:focus {
     font-size: 13px; }
   .news .item-title {
     font-size: 14px; }
-  .projects .tab-link {
+  .projects .nav-tabs {
     width: 55%; }
-  .products .tab-link {
+  .products .nav-tabs {
     width: 80%; } }
