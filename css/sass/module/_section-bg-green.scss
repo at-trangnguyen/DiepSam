@@ -1,0 +1,11 @@
+.section-has-bg-green {
+  padding: 38px 0;
+  background: $color-background-2;
+  text-align: center;
+}
+
+@media screen and (max-width: 959px) {
+  .section-has-bg-green {
+    padding: 20px 0;
+  }
+}

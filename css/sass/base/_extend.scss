@@ -1,0 +1,18 @@
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+%description {
+  font-family: $font-description;
+  line-height: 1.4;
+}
+
+%text-footer {
+  font-size: 13px;
+  font-family: $font-description;
+  color: $color-c;
+}

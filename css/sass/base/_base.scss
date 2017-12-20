@@ -1,0 +1,30 @@
+* {
+  @include box-sizing;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-family-body;
+  color: $color-a;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: $font-title;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+a, button, a {
+  &:focus {
+    outline: none;
+  }
+}
